@@ -15,7 +15,7 @@ last_tick = pygame.time.get_ticks()
 delta_time = 1000
 
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption('Flappy Bird')
+pygame.display.set_caption('Swimmy Fish')
 
 #define font
 font = pygame.font.SysFont('Bauhaus 93', 60)
@@ -62,7 +62,7 @@ class Bird(pygame.sprite.Sprite):
 		self.index = 0
 		self.counter = 0
 		for num in range (1, 4):
-			img = pygame.image.load(f"img/bird{num}.png")
+			img = pygame.image.load(f"img/Fish{num}.png")
 			self.images.append(img)
 		self.image = self.images[self.index]
 		self.rect = self.image.get_rect()
